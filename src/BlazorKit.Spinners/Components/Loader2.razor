@@ -23,8 +23,18 @@
             height: 40px;
             border-radius: 50%;
             border: 3px solid transparent;
-            border-bottom-color: #FF3D00;
+            border-bottom-color: @Color;
         }
+
+    @@keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 </style>
 
 <SpinnerContainer>

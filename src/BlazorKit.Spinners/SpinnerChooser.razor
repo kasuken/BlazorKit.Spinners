@@ -1,0 +1,20 @@
+﻿@namespace BlazorKit.Spinners
+@inherits SpinnerBase
+
+@switch (Spinner)
+{
+    case SpinnerTemplate.Loader2:
+        <Loader2 Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerTemplate.Loader3:
+        <Loader3 Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerTemplate.Loader1:
+    default:
+        <Loader1 Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+}
+
+@code {
+    [Parameter] public SpinnerTemplate Spinner { get; set; }
+}

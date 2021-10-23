@@ -1,0 +1,40 @@
+﻿@inherits SpinnerBase
+
+@if (IsLoading)
+{
+    if (LoadingTemplate == null)
+    {
+        <SpinnerChooser Center="@Center" Spinner="Spinner" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+    }
+    else
+    {
+        @LoadingTemplate
+    }
+}
+else
+{
+    if (!HasError || ErrorContentTemplate == null)
+    {
+        @ContentTemplate
+    }
+    if (HasError)
+    {
+        @ErrorContentTemplate
+    }
+}
+
+@code {
+
+    [Parameter] public SpinnerTemplate Spinner { get; set; }
+
+    [Parameter] public bool IsLoading { get; set; }
+
+    [Parameter] public bool HasError { get; set; }
+
+    [Parameter] public RenderFragment LoadingTemplate { get; set; }
+
+    [Parameter] public RenderFragment ContentTemplate { get; set; }
+
+    [Parameter] public RenderFragment ErrorContentTemplate { get; set; }
+
+}

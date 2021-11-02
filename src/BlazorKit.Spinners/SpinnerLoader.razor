@@ -4,7 +4,7 @@
 {
     if (LoadingTemplate == null)
     {
-        <SpinnerChooser Center="@Center" Spinner="Spinner" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        <SpinnerChooser Center="@Center" Spinner="Spinner" Size="@Size" AccentColor="@AccentColor" Color="@Color" @attributes="AdditionalAttributes" />
     }
     else
         @LoadingTemplate
@@ -17,9 +17,3 @@
             if (HasError)
                 @ErrorContentTemplate
             }
-
-@code {
-
-
-
-}

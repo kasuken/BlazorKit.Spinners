@@ -5,7 +5,7 @@
 
 <p>This component demonstrates fetching data from the server.</p>
 
-<SpinnerLoader IsLoading="isLoading" HasError="hasError" Size="46px" Color="#3498db" Center="true" Spinner="SpinnerTemplate.Loader1">
+<SpinnerLoader IsLoading="isLoading" HasError="hasError" Size="46px" AccentColor="#3498db" Color="Black" Center="true" Spinner="SpinnerTemplate.Loader6">
     <ContentTemplate>
         <table class="table">
             <thead>
@@ -47,7 +47,7 @@
     protected override async Task OnInitializedAsync()
     {
         isLoading = true;
-        await Task.Delay(200000);
+        await Task.Delay(20000);
         try
         {
             forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");

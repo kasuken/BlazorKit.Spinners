@@ -14,17 +14,5 @@ namespace BlazorKit.Spinners
         public RenderFragment ChildContent { get; set; }
         [Parameter] 
         public string BaseCss { get; set; }
-        
-        string CssClass =>
-            CssBuilder.Default(BaseCss)
-            .AddClass("loaderCenter", Center)
-            .AddClassFromAttributes(AdditionalAttributes)
-        .Build();
-
-        string Style =>
-            StyleBuilder.Empty()
-            .AddStyle("--sk-size", Size, when: !string.IsNullOrEmpty(Size))
-            .AddStyleFromAttributes(AdditionalAttributes)
-        .NullIfEmpty();
     }
 }

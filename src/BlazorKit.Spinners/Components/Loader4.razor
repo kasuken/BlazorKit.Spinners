@@ -2,11 +2,11 @@
 @inherits SpinnerBase
 
     <SpinnerContainer>
-        <span class="loader-3 @CssClass" style="@Style" />
+        <span class="loader-4 @CssClass" style="@Style" />
     </SpinnerContainer>
 
     <style>
-        .loader-3 {
+        .loader-4 {
             width: @Size;
             height: @Size;
             border: 3px solid @AccentColor;
@@ -17,17 +17,17 @@
             animation: rotation 1s linear infinite;
         }
 
-            .loader-3:after {
+            .loader-4:after {
                 content: "";
                 position: absolute;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                width: 56px;
-                height: 56px;
+                width: 40px;
+                height: 40px;
                 border-radius: 50%;
-                border: 3px solid transparent;
-                border-bottom-color: #FF3D00;
+                border: 3px solid;
+                border-color: #FF3D00 transparent;
             }
 
         @@keyframes rotation {

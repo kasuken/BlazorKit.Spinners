@@ -1,11 +1,15 @@
 ﻿@namespace BlazorKit.Spinners
 @inherits SpinnerBase
 
+<SpinnerContainer>
+    <span class="loader-2 @CssClass" style="@Style" />
+</SpinnerContainer>
+
 <style>
     .loader-2 {
-        width: 48px;
-        height: 48px;
-        border: 3px solid #FFF;
+        width: @Size;
+        height: @Size;
+        border: 3px solid @AccentColor;
         border-radius: 50%;
         display: inline-block;
         position: relative;
@@ -35,8 +39,11 @@
             transform: rotate(360deg);
         }
     }
-</style>
 
-<SpinnerContainer>
-    <span class="loader-2" />
-</SpinnerContainer>
+        .loaderCenter {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+</style>

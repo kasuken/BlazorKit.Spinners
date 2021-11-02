@@ -4,14 +4,23 @@
 @switch (Spinner)
 {
     case SpinnerTemplate.Loader2:
-        <Loader2 Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        <Loader2 Center="@Center" Size="@Size" AccentColor="@AccentColor" Color="@Color" @attributes="AdditionalAttributes" />
         break;
     case SpinnerTemplate.Loader3:
-        <Loader3 Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        <Loader3 Center="@Center" Size="@Size" AccentColor="@AccentColor" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerTemplate.Loader4:
+        <Loader4 Center="@Center" Size="@Size" AccentColor="@AccentColor" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerTemplate.Loader5:
+        <Loader5 Center="@Center" Size="@Size" AccentColor="@AccentColor" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerTemplate.Loader6:
+        <Loader6 Center="@Center" Size="@Size" AccentColor="@AccentColor" Color="@Color" @attributes="AdditionalAttributes" />
         break;
     case SpinnerTemplate.Loader1:
     default:
-        <Loader1 Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        <Loader1 Center="@Center" Size="@Size" AccentColor="@AccentColor" Color="@Color" @attributes="AdditionalAttributes" />
         break;
 }
 

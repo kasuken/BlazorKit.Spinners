@@ -17,13 +17,12 @@ namespace BlazorKit.Spinners
         
         string CssClass =>
             CssBuilder.Default(BaseCss)
-            .AddClass("sk-center", Center)
+            .AddClass("loaderCenter", Center)
             .AddClassFromAttributes(AdditionalAttributes)
         .Build();
 
         string Style =>
             StyleBuilder.Empty()
-            .AddStyle("--sk-color", Color, when: !string.IsNullOrEmpty(Color))
             .AddStyle("--sk-size", Size, when: !string.IsNullOrEmpty(Size))
             .AddStyleFromAttributes(AdditionalAttributes)
         .NullIfEmpty();

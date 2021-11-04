@@ -10,6 +10,9 @@ namespace BlazorKit.Spinners
     {
         Loader1,
         Loader2,
-        Loader3
+        Loader3,
+        Loader4,
+        Loader5,
+        Loader6
     }
 }

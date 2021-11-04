@@ -12,21 +12,28 @@
 		<RepositoryType></RepositoryType>
 		<PackageTags>Blazor, Razor Components</PackageTags>
 		<PackageReleaseNotes>
-			1.0 Initial Release
+			0.5.0 Alpha Release
 		</PackageReleaseNotes>
 		<PackageProjectUrl>https://github.com/kasuken/BlazorKit.Spinners</PackageProjectUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<FileVersion>1.0.0.0</FileVersion>
 		<Version>1.0.0</Version>
+		<Copyright>Emanuele Bartolesi</Copyright>
+		<PackageIcon>spinner_icon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove="LICENSE.txt" />
+		<None Remove="LICENSE.txt" />
+		<None Include="spinner_icon.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="LICENSE.txt" />
+		<Content Include="LICENSE.txt" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -36,10 +43,10 @@
 	<ItemGroup>
 		<PackageReference Include="BlazorComponentUtilities" Version="1.7.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.11" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="wwwroot\" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.4.244">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 	</ItemGroup>
 
 </Project>

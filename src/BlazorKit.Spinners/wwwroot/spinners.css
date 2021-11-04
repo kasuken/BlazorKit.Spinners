@@ -1,5 +1,25 @@
 ﻿.loaderCenter {
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    /* TODO - remove the !important and place the centering rule on the loader wrapper */
+    display: block !important;
+}
+
+.loaderWrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.loaderMain {
+    width: 72px;
+    height: 72px;
+    border: 5px solid #3498db;
+    border-bottom-color: White;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
 }

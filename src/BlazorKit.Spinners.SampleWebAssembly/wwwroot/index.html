@@ -8,12 +8,20 @@
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
-    <link href="_content/BlazorKit.Spinners/spinners.css" rel="stylesheet" />
     <link href="BlazorKit.Spinners.SampleWebAssembly.styles.css" rel="stylesheet" />
+
+    <link href="_content/BlazorKit.Spinners/spinners.css" rel="stylesheet" />
+    <link href="_content/BlazorKit.Spinners/keyframes.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="app">Loading...</div>
+    <div id="app">
+
+        <div class="loaderWrapper">
+            <span class="loaderMain"></span>
+        </div>
+
+    </div>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.

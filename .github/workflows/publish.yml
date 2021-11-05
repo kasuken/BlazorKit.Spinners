@@ -2,7 +2,7 @@ name: Publish Tiny .NET Helpers on NuGet
  
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths: [ 'src/BlazorKit.Spinners/**' ]
   workflow_dispatch:
 

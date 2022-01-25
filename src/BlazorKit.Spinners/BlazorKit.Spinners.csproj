@@ -22,6 +22,7 @@
 		<Copyright>Emanuele Bartolesi</Copyright>
 		<PackageIcon>spinner_icon.png</PackageIcon>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -41,6 +42,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Include="docs\README.md" Pack="true" PackagePath="\"/>
 		<PackageReference Include="BlazorComponentUtilities" Version="1.7.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.11" />
 		<PackageReference Include="Nerdbank.GitVersioning" Version="3.4.244">

@@ -5,8 +5,7 @@
 
 A Blazor library for loading spinners.
 
-It's an alpha version.
-
+It's a beta version.
 
 ## Screenshots
 

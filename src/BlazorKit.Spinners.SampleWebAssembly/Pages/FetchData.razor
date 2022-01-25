@@ -47,7 +47,7 @@
     protected override async Task OnInitializedAsync()
     {
         isLoading = true;
-        await Task.Delay(5000);
+        await Task.Delay(20000);
         try
         {
             forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");

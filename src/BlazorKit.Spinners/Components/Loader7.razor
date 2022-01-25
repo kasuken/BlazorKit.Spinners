@@ -1,0 +1,35 @@
+﻿@namespace BlazorKit.Spinners
+@inherits SpinnerBase
+
+<span class="loader-7 @CssClass" style="@Style" />
+
+<style>
+    .loader-7 {
+        width: @Size;
+        height: @Size;
+        border: 2px solid @Color;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        -webkit-animation: rotation 1s linear infinite;
+        animation: rotation 1s linear infinite;
+    }
+
+        .loader-7:after, .loader-7:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: @AccentColor;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+
+        .loader-7:before {
+            left: auto;
+            top: auto;
+            right: 0;
+            bottom: 0;
+        }
+</style>

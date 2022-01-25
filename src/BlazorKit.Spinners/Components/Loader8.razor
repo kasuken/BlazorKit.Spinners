@@ -1,0 +1,29 @@
+﻿@namespace BlazorKit.Spinners
+@inherits SpinnerBase
+
+<span class="loader-8 @CssClass" style="@Style" />
+
+<style>
+    .loader-8 {
+        width: @Size;
+        height: @Size;
+        border: 3px solid @Color;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        -webkit-animation: rotation 1s linear infinite;
+        animation: rotation 1s linear infinite;
+    }
+
+        .loader-8:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: @AccentColor;
+            width: 16px;
+            height: 16px;
+            transform: translate(-50%, 50%);
+            border-radius: 50%;
+        }
+</style>

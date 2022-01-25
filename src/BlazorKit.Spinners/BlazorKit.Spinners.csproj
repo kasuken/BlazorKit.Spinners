@@ -42,7 +42,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="docs\README.md" Pack="true" PackagePath="\"/>
+		<None Include="docs\README.md" Pack="true" PackagePath="\" />
+		<None Include="wwwroot\keyframes.css" />
+		<None Include="wwwroot\spinners.css" />
 		<PackageReference Include="BlazorComponentUtilities" Version="1.7.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.11" />
 		<PackageReference Include="Nerdbank.GitVersioning" Version="3.4.244">

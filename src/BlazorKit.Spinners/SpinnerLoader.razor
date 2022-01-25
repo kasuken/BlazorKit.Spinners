@@ -8,12 +8,12 @@
     }
     else
         @LoadingTemplate
-    }
-    else
-    {
-        if (!HasError || ErrorContentTemplate == null)
-            @ContentTemplate
+}
+else
+{
+    if (!HasError || ErrorContentTemplate == null)
+        @ContentTemplate
 
-            if (HasError)
-                @ErrorContentTemplate
-            }
+    if (HasError)
+        @ErrorContentTemplate
+}

@@ -1,39 +1,37 @@
 ﻿@namespace BlazorKit.Spinners
 @inherits SpinnerBase
 
-    <SpinnerContainer>
-        <span class="loader-6 @CssClass" style="@Style" />
-    </SpinnerContainer>
+<span class="loader-6 @CssClass" style="@Style" />
 
-    <style>
-        .loader-6 {
-            width: @Size;
-            height: @Size;
-            border: 2px solid @AccentColor;
+<style>
+    .loader-6 {
+        width: @Size;
+        height: @Size;
+        border: 2px solid @AccentColor;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        -webkit-animation: rotation 1s linear infinite;
+        animation: rotation 1s linear infinite;
+    }
+
+        .loader-6:after, .loader-6:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: @Color;
+            width: 6px;
+            height: 6px;
+            transform: translate(150%, 150%);
             border-radius: 50%;
-            display: inline-block;
-            position: relative;
-            -webkit-animation: rotation 1s linear infinite;
-            animation: rotation 1s linear infinite;
         }
 
-            .loader-6:after, .loader-6:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                background: @Color;
-                width: 6px;
-                height: 6px;
-                transform: translate(150%, 150%);
-                border-radius: 50%;
-            }
-
-            .loader-6:before {
-                left: auto;
-                top: auto;
-                right: 0;
-                bottom: 0;
-                transform: translate(-150%, -150%);
-            }
-    </style>
+        .loader-6:before {
+            left: auto;
+            top: auto;
+            right: 0;
+            bottom: 0;
+            transform: translate(-150%, -150%);
+        }
+</style>

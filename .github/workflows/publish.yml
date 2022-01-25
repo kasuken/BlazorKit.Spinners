@@ -1,4 +1,4 @@
-name: Publish Tiny .NET Helpers on NuGet
+name: Publish BlazorKit.Spinners on NuGet
  
 on:
   push:

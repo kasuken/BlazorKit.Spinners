@@ -1,6 +1,8 @@
 
 # BlazorKit.Spinners
 
+![](https://countrush-prod.azurewebsites.net/l/badge/?repository=kasuken.BlazorKitSpinners)
+
 A Blazor library for loading spinners.
 
 It's an alpha version.

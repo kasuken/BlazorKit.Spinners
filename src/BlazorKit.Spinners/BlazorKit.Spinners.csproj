@@ -12,13 +12,10 @@
 		<RepositoryType></RepositoryType>
 		<PackageTags>Blazor, Razor Components</PackageTags>
 		<PackageReleaseNotes>
-			0.6.0 Alpha Release
+			0.7.0
 		</PackageReleaseNotes>
 		<PackageProjectUrl>https://github.com/kasuken/BlazorKit.Spinners</PackageProjectUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<FileVersion>1.0.0.0</FileVersion>
-		<Version>1.0.0</Version>
 		<Copyright>Emanuele Bartolesi</Copyright>
 		<PackageIcon>spinner_icon.png</PackageIcon>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>

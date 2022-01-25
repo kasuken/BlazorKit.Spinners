@@ -15,7 +15,7 @@ It's an alpha version.
 
 ## Features
 
-- 6 different spinners out-of-the-box
+- 8 different spinners out-of-the-box
 - colors customisation (accent color and background color)
 - center the spinner with a property
 - easy implementation on your code

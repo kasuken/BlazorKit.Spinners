@@ -3,6 +3,8 @@
 
 ![](https://countrush-prod.azurewebsites.net/l/badge/?repository=kasuken.BlazorKitSpinners)
 
+[![Publish BlazorKit.Spinners on NuGet](https://github.com/kasuken/BlazorKit.Spinners/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/kasuken/BlazorKit.Spinners/actions/workflows/publish.yml)
+
 A Blazor library for loading spinners.
 
 It's a beta version.

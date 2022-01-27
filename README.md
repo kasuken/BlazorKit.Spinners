@@ -25,9 +25,9 @@ It's a beta version.
 
 ## Roadmap
 
-- Additional spinners
-- More than 30 spinners
-- .NET 6 migration
+- [ ] Additional spinners
+- [ ] More than 30 spinners
+- [x] .NET 6 migration
 
 
 ## Installation
@@ -64,7 +64,8 @@ Between the BODY tags edit the APP section so that it looks like this:
 ## Tech Stack
 
 - Blazor
-- .NET 5
+- .NET 6
+- C# 10.0
 
 ## Run Locally
 

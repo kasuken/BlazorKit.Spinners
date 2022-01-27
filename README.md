@@ -34,26 +34,26 @@ It's a beta version.
 
 With Package Manager:
 
-```
+```gitattributes
 Install-Package BlazorKit.Spinners
 ```
 
 With .NET CLI:
 
-```
+```gitattributes
 dotnet add package BlazorKit.Spinners
 ```
 
 If the project is Blazor WebAssembly, it is also necessary to modify the INDEX.HTML page present in the WWWROOT folder of the CLIENT project as follows
 
 Between the HEAD tags add:
-```
+```Razor
 <link href="_content/BlazorKit.Spinners/spinners.css" rel="stylesheet" />
 <link href="_content/BlazorKit.Spinners/keyframes.css" rel="stylesheet" />
 ```
 
 Between the BODY tags edit the APP section so that it looks like this:
-```
+```Razor
 <div id="app">
   <div class="loaderWrapper">
     <span class="loaderMain"></span>
@@ -70,19 +70,19 @@ Between the BODY tags edit the APP section so that it looks like this:
 
 Clone the project
 
-```bash
+```gitattributes
   git clone https://github.com/kasuken/BlazorKit.Spinners
 ```
 
 Go to the project directory
 
-```bash
+```gitattributes
   cd BlazorKit.Spinners
 ```
 
 Start
 
-```bash
+```gitattributes
   dotnet run
 ```
 

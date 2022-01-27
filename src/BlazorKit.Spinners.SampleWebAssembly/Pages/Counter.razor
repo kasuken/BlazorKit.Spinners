@@ -1,16 +1,14 @@
 ﻿@page "/counter"
-
-<h1>Counter</h1>
-
-<p>Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
+<select class="form-control w-25" @bind="Spinner">
+    @foreach (SpinnerTemplate spinner in Enum.GetValues(typeof(SpinnerTemplate)))
     {
-        currentCount++;
+        <option value="@spinner">@spinner</option>
     }
+</select>
+<br />
+<SpinnerLoader IsLoading="true" HasError="false" Size="50px" AccentColor="#3498db" Color="White" Center="true" Spinner="@Spinner" />
+
+<br />
+@code {
+    SpinnerTemplate Spinner;
 }

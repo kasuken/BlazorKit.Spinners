@@ -47,13 +47,13 @@ dotnet add package BlazorKit.Spinners
 If the project is Blazor WebAssembly, it is also necessary to modify the INDEX.HTML page present in the WWWROOT folder of the CLIENT project as follows
 
 Between the HEAD tags add:
-```
+```html
 <link href="_content/BlazorKit.Spinners/spinners.css" rel="stylesheet" />
 <link href="_content/BlazorKit.Spinners/keyframes.css" rel="stylesheet" />
 ```
 
 Between the BODY tags edit the APP section so that it looks like this:
-```
+```Razor
 <div id="app">
   <div class="loaderWrapper">
     <span class="loaderMain"></span>

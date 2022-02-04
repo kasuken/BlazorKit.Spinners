@@ -13,7 +13,6 @@ It's a beta version.
 
 ![App Screenshot](https://github.com/kasuken/BlazorKit.Spinners/raw/dev/blazorkit.spinners.gif)
 
-
 ## Features
 
 - 8 different spinners out-of-the-box
@@ -22,25 +21,23 @@ It's a beta version.
 - easy implementation on your code
 - custom main spinner for web assembly loading
 
-
 ## Roadmap
 
 - Additional spinners
 - More than 30 spinners
 - .NET 6 migration
 
-
 ## Installation
 
 With Package Manager:
 
-```
+```powershell
 Install-Package BlazorKit.Spinners
 ```
 
 With .NET CLI:
 
-```
+```console
 dotnet add package BlazorKit.Spinners
 ```
 
@@ -70,19 +67,19 @@ Between the BODY tags edit the APP section so that it looks like this:
 
 Clone the project
 
-```bash
+```console
   git clone https://github.com/kasuken/BlazorKit.Spinners
 ```
 
 Go to the project directory
 
-```bash
+```console
   cd BlazorKit.Spinners
 ```
 
 Start
 
-```bash
+```console
   dotnet run
 ```
 

@@ -10,13 +10,13 @@ A Blazor library for loading spinners.
 
 With Package Manager:
 
-```
+```powershell
 Install-Package BlazorKit.Spinners
 ```
 
 With .NET CLI:
 
-```
+```console
 dotnet add package BlazorKit.Spinners
 ```
 
@@ -25,13 +25,13 @@ dotnet add package BlazorKit.Spinners
 If the project is Blazor WebAssembly, it is also necessary to modify the INDEX.HTML page present in the WWWROOT folder of the CLIENT project as follows
 
 Between the HEAD tags add:
-```
+```html
 <link href="_content/BlazorKit.Spinners/spinners.css" rel="stylesheet" />
 <link href="_content/BlazorKit.Spinners/keyframes.css" rel="stylesheet" />
 ```
 
 Between the BODY tags edit the APP section so that it looks like this:
-```
+```Razor
 <div id="app">
   <div class="loaderWrapper">
     <span class="loaderMain"></span>
@@ -41,7 +41,7 @@ Between the BODY tags edit the APP section so that it looks like this:
 
 ### Razor
 
-```
+```Razor
 <SpinnerLoader IsLoading="isLoading" HasError="hasError" Size="46px" AccentColor="#3498db" Color="White" Center="true" Spinner="SpinnerTemplate.Loader1">
     <ContentTemplate>
         <table class="table">
@@ -60,7 +60,7 @@ Between the BODY tags edit the APP section so that it looks like this:
 
 ### Code Behind
 
-```
+```csharp
     private bool hasError = false;
     private bool isLoading = true;
 

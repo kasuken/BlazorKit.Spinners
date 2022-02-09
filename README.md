@@ -11,7 +11,7 @@ It's a beta version.
 
 ## Screenshots
 
-![App Screenshot](https://github.com/kasuken/BlazorKit.Spinners/raw/dev/blazorkit.spinners.gif)
+![App Screenshot](https://github.com/kasuken/BlazorKit.Spinners/raw/dev/blazorkit.spinners.0.7.14.gif)
 
 ## Features
 

@@ -4,7 +4,7 @@ A Blazor library for loading spinners.
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/kasuken/BlazorKit.Spinners/dev/blazorkit.spinners.gif)
+![App Screenshot](https://raw.githubusercontent.com/kasuken/BlazorKit.Spinners/dev/blazorkit.spinners.0.7.14.gif)
 
 ## Installation
 

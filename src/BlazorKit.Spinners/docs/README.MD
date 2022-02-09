@@ -10,13 +10,13 @@ A Blazor library for loading spinners.
 
 With Package Manager:
 
-```powershell
+```gitattributes
 Install-Package BlazorKit.Spinners
 ```
 
 With .NET CLI:
 
-```console
+```gitattributes
 dotnet add package BlazorKit.Spinners
 ```
 
@@ -60,7 +60,7 @@ Between the BODY tags edit the APP section so that it looks like this:
 
 ### Code Behind
 
-```csharp
+```CSharp
     private bool hasError = false;
     private bool isLoading = true;
 

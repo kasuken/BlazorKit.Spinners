@@ -23,21 +23,21 @@ It's a beta version.
 
 ## Roadmap
 
-- Additional spinners
-- More than 30 spinners
-- .NET 6 migration
+- [ ] Additional spinners
+- [ ] More than 30 spinners
+- [x] .NET 6 migration
 
 ## Installation
 
 With Package Manager:
 
-```powershell
+```gitattributes
 Install-Package BlazorKit.Spinners
 ```
 
 With .NET CLI:
 
-```console
+```gitattributes
 dotnet add package BlazorKit.Spinners
 ```
 
@@ -61,28 +61,28 @@ Between the BODY tags edit the APP section so that it looks like this:
 ## Tech Stack
 
 - Blazor
-- .NET 5
+- .NET 6
+- C# 10.0
 
 ## Run Locally
 
 Clone the project
 
-```console
+```gitattributes
   git clone https://github.com/kasuken/BlazorKit.Spinners
 ```
 
 Go to the project directory
 
-```console
+```gitattributes
   cd BlazorKit.Spinners
 ```
 
 Start
 
-```console
+```gitattributes
   dotnet run
 ```
-
 
 ## Contributing
 

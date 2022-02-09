@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
 	<PropertyGroup>
-		<TargetFramework>net5.0</TargetFramework>
+		<TargetFramework>net6.0</TargetFramework>
 		<Authors>Emanuele Bartolesi</Authors>
 		<Company>www.emanuelebartolesi.com</Company>
 		<Description>A lot of loading spinners for Blazor.</Description>
@@ -42,9 +42,9 @@
 		<None Include="docs\README.md" Pack="true" PackagePath="\" />
 		<None Include="wwwroot\keyframes.css" />
 		<None Include="wwwroot\spinners.css" />
-		<PackageReference Include="BlazorComponentUtilities" Version="1.7.1" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.11" />
-		<PackageReference Include="Nerdbank.GitVersioning" Version="3.4.244">
+		<PackageReference Include="BlazorComponentUtilities" Version="1.8.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.2" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.4.255">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>

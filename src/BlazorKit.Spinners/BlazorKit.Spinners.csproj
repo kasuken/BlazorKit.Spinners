@@ -11,7 +11,6 @@
 		<RepositoryType></RepositoryType>
 		<PackageTags>Blazor, Razor Components</PackageTags>
 		<PackageProjectUrl>https://github.com/kasuken/BlazorKit.Spinners</PackageProjectUrl>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Copyright>Emanuele Bartolesi</Copyright>
 		<PackageIcon>spinner_icon.png</PackageIcon>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>

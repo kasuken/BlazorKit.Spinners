@@ -25,7 +25,7 @@ It's a beta version.
 
 - [ ] Additional spinners
 - [ ] More than 30 spinners
-- [ ] .NET 7 migration
+- [x] .NET 7 migration
 - [x] .NET 6 migration
 
 ## Installation

@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
+		<StaticWebAssetsEnabled>false</StaticWebAssetsEnabled>
 		<Authors>Emanuele Bartolesi</Authors>
 		<Company>www.emanuelebartolesi.com</Company>
 		<Description>A lot of loading spinners for Blazor.</Description>

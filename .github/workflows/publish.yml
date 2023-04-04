@@ -7,25 +7,26 @@ on:
   workflow_dispatch:
 
 env:
-  NETCORE_VERSION: '6.0.*'
-  PROJECT_NAME: src/BlazorKit.Spinners 
-  PROJECT_FILE: BlazorKit.Spinners.csproj  
+  NET_VERSION: '7.x'
+  PROJECT_NAME: src/BlazorKit.Spinners
+  PROJECT_FILE: BlazorKit.Spinners.csproj
   
 jobs:
-  build:
+  publish:
     name: Publish on NuGet
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         fetch-depth: 0 # avoid shallow clone so nbgv can do its work.
         
-    - name: Setup .NET Core SDK ${{ env.NETCORE_VERSION }}
-      uses: actions/setup-dotnet@v1
+    - name: Setup .NET SDK ${{ env.NET_VERSION }}
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: ${{ env.NETCORE_VERSION }}
+        dotnet-version: ${{ env.NET_VERSION }}
+        dotnet-quality: 'ga'
         
     - name: Nerdbank.GitVersioning 
       uses: dotnet/nbgv@v0.4
@@ -33,10 +34,8 @@ jobs:
       with:        
         path: ${{ env.PROJECT_NAME }}
         
-    - name: Publish on NuGet        
-      uses: rohith/publish-nuget@v2
-      with:          
-        PROJECT_FILE_PATH: '${{ env.PROJECT_NAME }}/${{ env.PROJECT_FILE }}'
-        VERSION_STATIC: ${{ steps.nbgv.outputs.NuGetPackageVersion }}
-        TAG_FORMAT: v*
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - name: Package
+      run: dotnet pack -c Release -o . '${{ env.PROJECT_NAME }}/${{ env.PROJECT_FILE }}'
+      
+    - name: Publish on NuGet
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json 

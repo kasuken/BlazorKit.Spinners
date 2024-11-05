@@ -24,7 +24,7 @@ It's a beta version.
 
 - [ ] Additional spinners
 - [ ] More than 30 spinners
-- [ ] .NET 8 migration
+- [x] .NET 8 migration
 - [x] .NET 7 migration
 - [x] .NET 6 migration
 
@@ -62,8 +62,8 @@ Between the BODY tags edit the APP section so that it looks like this:
 ## Tech Stack
 
 - Blazor
-- .NET 6
-- C# 10.0
+- .NET 8
+- C# 12.0
 
 ## Run Locally
 

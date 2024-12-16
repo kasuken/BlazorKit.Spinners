@@ -24,6 +24,7 @@ It's a beta version.
 
 - [ ] Additional spinners
 - [ ] More than 30 spinners
+- [ ] .NET 9 migration
 - [ ] .NET 8 migration
 - [x] .NET 7 migration
 - [x] .NET 6 migration
